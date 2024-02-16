@@ -6,7 +6,7 @@
     <title>Prit N. Mhala - Resume</title>
     <style>
         body {
-            font-family: 'Times New Roman', serif; /* Set the font to Times New Roman */
+            font-family: 'Times New Roman', serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
@@ -22,22 +22,41 @@
             margin-bottom: 20px;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            line-height: 1.5; /* Add spacing between lines */
+            box-sizing: border-box;
         }
-        section {
-            margin-bottom: 20px; /* Add spacing between sections */
+        .left-section,
+        .middle-section,
+        .right-section {
+            width: calc(100% / 3 - 20px);
+        }
+        .section {
+            margin-bottom: 20px;
         }
         h2 {
-            font-size: 24px; /* Increase font size for section headers */
+            font-size: 24px;
         }
-        /* Set font for all text in Times New Roman */
         p, li, strong, a {
             font-family: 'Times New Roman', serif;
+        }
+        .profile-photo {
+            max-width: 100%;
+            height: auto;
+        }
+        .achievement-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .education-item {
+            font-size: 16px;
+        }
+        .education-item strong {
+            font-size: 16px;
+            font-weight: bold; /* Resetting the bold style */
         }
     </style>
 </head>
@@ -47,76 +66,45 @@
         <p>BTech Computer Science - 3rd Year</p>
     </header>
     <div class="container">
-        <section>
+        <section class="left-section section" style="width: 25%;">
+            
             <h2>Contact</h2>
             <p>
                 Phone: +91-9082718281<br>
-                Email: 112115089@cse.iiitp.ac.in<br>
+                Email: <a href="mailto:112115089@cse.iiitp.ac.in">112115089@cse.iiitp.ac.in</a><br>
                 LinkedIn: <a href="https://www.linkedin.com/in/prit-mhala-8baab7223/">linkedin.com/in/PritMhala</a>
-            </p>
-        </section>
-        <section>
-            <h2>Education</h2>
+            </p>            
+            <br>
+            
+            <h2 style="font-size: 24px;">Education</h2>
             <div class="education-item">
-                <p>
-                    <strong>Indian Institute of Information Technology, Pune</strong><br>
-                    B.Tech Computer Science and Engineering<br>
-                    CGPA: 8.55/10.00
+            <p>
+                <strong style="font-size: 16px;">Indian Institute of Information Technology, Pune</strong>
+                <ul>
+                    <li><strong>B.Tech Computer Science and Engineering</strong><br>
+                                CGPA: 8.74/10.00 (till 5th sem)</li>
+                </ul>
+                <ul>
+                <li><strong>Honors in Machine Learning</strong><br>
+                            CGPA: 8.50/10.00 (till 1st sem)<br>
+                            Department Rank - 2</li>
+                </ul>
                 </p>
             </div>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <p> 
-                <ul>
-                <li>
-                    <img src="Certificate_iiitp_summer_intern.png" alt="Achievement Image" style="width: 100%;"><br>
-                </li>
-            </ul>
-                <strong>Research Intern</strong><br>
-                Indian Institute of Information Technology, Pune<br>
-                May 2023 - Jul 2023 (3 months)<br>
-                Wrote and submitted a research paper titled "Using transfer learning-driven deep learning to improve the detection of rose plant diseases" in Springer Publications. Achieved accuracy, precision, recall, and F1-Score of 98.92%, 98.96%, 98.92%, 98.93% respectively, which was a significant improvement on previously published work having an accuracy of 92.3%.
-            </p>
-        </section>
-        <section>
-    <h2>Projects</h2>
-    <ol>
-        <li>
-            <strong>Transfer Learning Approach using Deep Learning to Detect and Classify Rose Leaf Diseases</strong><br>
-            Wrote and submitted a research paper titled "Using transfer learning-driven deep learning to improve the detection of rose plant diseases" in Springer Publications. Achieved accuracy, precision, recall, and F1-Score of 98.92%, 98.96%, 98.92%, 98.93% respectively, which was a significant improvement on previously published work having an accuracy of 92.3%. DenseNet121, MobileNetV2, InceptionV3, Resnet50V2, VGG19, and xception were used as transfer learning architectures.
-        </li>
-        <li>
-            <strong>Detection and Classification of Medicinal Plant Diseases using Transfer Learning Architectures</strong><br>
-            Achieved an accuracy of 98.10% in successfully detecting and classifying 10 different medicinal plants. Significant improvement on previously published work which had an accuracy of 90.09%. Also, wrote and submitted a research paper in Springer Publications.
-        </li>
-        <li>
-            <strong>Detection and Classification of BlackGram Leaf Diseases using Transfer Learning Architectures</strong><br>
-            Achieved an accuracy of 95% in successfully detecting and classifying 5 different medicinal plants. Significant improvement on previously published work which had an accuracy of 89%. NasNetmobile, DenseNet201, MobileNetV2, InceptionV3, Resnet152V2, VGG19, xception, and InceptionResNetV2 were used as transfer learning architectures. Research paper to be submitted to the INTERNATIONAL CONFERENCE ON ADVANCED NETWORK TECHNOLOGIES AND INTELLIGENT COMPUTING.
-        </li>
-        <li>
-            <strong>Road Sign Object Detection using YOLOV8</strong><br>
-            Achieved an MPA value of 97%, which is better than the previously published work by nearly 10%. Wrote and submitted a research paper in Springer Link Publications.
-        </li>
-        <li>
-            <strong>Deep Learning in Alzheimer's Disease Detection through transfer learning approach</strong><br>
-            Developed a robust deep learning-based system for early Alzheimer's disease detection using a large MRI dataset. Our model, leveraging transfer learning with EfficientNetV2B3, InceptionNetV3, and MobileNetV2, achieved an impressive diagnostic accuracy of 97.42%, along with high precision, recall, and F1-Score. Real-time monitoring and metric logging on the Weights and Biases platform enhance its potential to address critical healthcare challenges associated with Alzheimer's disease.
-        </li>
-        <li>
-            <strong>Enhancing Strawberry Harvesting Efficiency through YOLO-V8 Object Detection Assessment</strong><br>
-            Deployed the YOLO-V8 object detection framework and achieved a remarkable 11% increase in Mean Average Precision (MAP) as the primary measurement entity as compared to previously published work. This enhancement not only signifies a substantial improvement in precision and accuracy but also holds the potential to revolutionize strawberry harvesting by optimizing resource allocation and reducing labor costs.
-        </li>
-        <li>
-            <strong>Tomato YOLOv8 Optimization Model Based on Attention Mechanism</strong><br>
-            Made a significant advancement in computer vision applied to dense tomato scenes. Deployed on a tomato images dataset, this model has demonstrated remarkable performance, elevating the Mean Average Precision (MAP) value to an impressive 92.8%. This substantial improvement from the previous MAP value of 87.8% underscores the model's efficacy in accurately detecting and localizing tomatoes in complex scenes.
-        </li>
-    </ol>
-</section>
-        <section>
+               
+            <br>
+
             <h2>Skills</h2>
             <ul>
                 <li>Machine Learning</li>
                 <li>Deep Learning</li>
+                <li>Compute Vision</li>
+                <li>Large language Models</li>
+                <li>Diffusion Models</li>
+                <li>Academic Publishing</li>
+                <li>Tensorflow</li>
+                <li>Pytorch</li>
+                <li>Transformers</li>
                 <li>Transfer Learning</li>
                 <li>Natural Language Processing (NLP)</li>
                 <li>Sentiment Analysis</li>
@@ -126,62 +114,528 @@
                 <li>C++</li>
                 <li>React.js</li>
             </ul>
+
+            <br>
+
+            <h2>Courses and Certifications</h2>
+            <ul>
+                <li>Deep Learning Specialization - Coursera (Deeplearning.ai)</li>
+                <li>Machine Learning Specialization - Coursera (Deeplearning.ai)</li>
+                <li>Natural Language Processing Specialization - Coursera (Deeplearning.ai)<br>Under completion</li>
+                <li>Generative AI with LLMs - Coursera (Deeplearning.ai)<br>Under completion</li>
+                <li>TensorFlow Advanced Techniques - Coursera (Deeplearning.ai)<br>Under completion</li>
+                <li>Generative Adversarial Networks - Coursera (Deeplearning.ai)<br>Under completion</li>
+                <li>Deep Learning A-Z (Udemy)</li>
+                <li>Machine Learning A-Z (Udemy)</li>
+                <li>NLP Lazy Programmer (Udemy)</li>
+                <li>ChatGPT Promptengineering for developers<br>Under learning process</li>
+                <li>Building Systems with the ChatGPT API<br>Under learning process</li>
+                <li>LangChain for LLM Application development<br>Under learning process</li>
+                <li>LangChain: Chat with your data<br>Under learning process</li>
+                <li>Finetuning Large Language models<br>Under learning process</li>
+                <li>Large Language models with semantic search<br>Under learning process</li>
+                <li>Building Generative AI Applications with Gradio<br>Under learning process</li>
+                <li>Evaluating and Debugging Generative AI Models Using Weights and Biases<br>Under learning process</li>
+                <li>How Diffusion Models Work<br>Under learning process</li>
+                <li>Automated Testing for LLMOps<br>Under learning process</li>
+                <li>LLMOps<br>Under learning process</li>
+                <li>Build LLM Apps with LangChain.js<br>Under learning process</li>
+                <li>Advanced Retrieval for AI with Chroma<br>Under learning process</li>
+                <li>Reinforcement Learning from Human Feedback<br>Under learning process</li>
+                <li>Building and Evaluating Advanced RAG Applications<br>Under learning process</li>
+                <li>Quality and Safety for LLM Applications<br>Under learning process</li>
+                <li>Vector Databases: from Embeddings to Applications<br>Under learning process</li>
+                <li>Functions, Tools and Agents with LangChain<br>Under learning process</li>
+                <li>Pair Programming with a Large Language Model<br>Under learning process</li>
+                <li>Understanding and Applying Text Embeddings<br>Under learning process</li>
+                <li>How Business Thinkers Can Start Building AI Plugins With Semantic Kernel<br>Under learning process</li>
+            </ul>
+            
+
         </section>
-        <section>
-            <h2>Achievements</h2>
+    
+
+
+
+        <section class="middle-section section" style="width: 60%;"" style="flex: 1;">
+            
+            
+            <h2 style="font-size: 30px;">Research Internships</h2>
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\indian_institute_of_technology_roorkee_logo.jpeg" alt="IIT Roorkee Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 20px;">
+                    <h3 style="font-size: 24px;">Indian Institute of Technology, Roorkee</h3>
+                    <p>November 2023 - Present</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Incorporating Textual Prompts to facilitate High-Quality Image Restoration and Reconstruction using SWIN Transformer as backbone architecture pipeline:</strong><br><br>
+                        <ul style="color: black;">
+                            <li>Currently under process of writting research paper to be submitted to A-star Conference ECCV, AAAI, BMCV, CVPR or WACV</li>
+                            <li>Generated Texual Prompts on benchmark datasets (DIV2k and Flickr) using gpt-2 transformer.</li>
+                            <li>Studied and analyzed the original SWIN transformer architecture.</li>
+                            <li style="clear: both;">Incorporated the textual prompts feature to guide the image restoration module in the SWIN transformer.</li>
+                            <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\swinir_proposed_model.jpg" alt="SWINIR Proposed Model" style="width: 300px; height: auto; float: right; margin-left: 10px;">
+                            <li>Used CLIP and BERT to generate Textual and Image embedding.</li>
+                            <li>Modified the SWINIR model to take these embeddings as input while training.</li>
+                            <li>Modified RSTB module (Residual Swin Transformer Blocks), Window Partitioning, and Upsampling modules.</li>
+                            <li>The modified SWINIR is used for Super-resolution, Denoising, and JPEG compression artifact reduction.</li>
+                            <li>Using Texual Prompts to guide the image restoration process after shallow and deep feature extraction by SWIN transformer.</li>
+                            <li>Tested the model on PSNR and SSIM as evaluation criteria for super resolution.</li>
+                        </ul>
+                        <br>
+                    </li>
+                    <li>
+                        <strong>Zero-Shot Learning for Image Classification using CLIP:</strong><br><br>
+                        This project employs the CLIP for zero-shot learning in image classification, specifically on the ImageNet, Plant-Village, and Bangladeshi Crop dataset. By harnessing pre-trained Vision Language Models (VLM), the research endeavors to enhance transfer performance. This approach holds promise for broadening the applicability of image classification models across diverse and previously unseen categories within the benchmark dataset.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Currently working on Diffusion Models for Hyperspectral Imaging</strong>
+                        <ul>
+                            <li>Research paper to be submitted to A-star Conference ECCV, AAAI, BMCV, CVPR or WACV</li>
+                    </li>
+                        </ul>
+                        
+                </ul>
+            </div>
+
+
+
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\iiitpune_logo.jpeg" alt="IIIT Pune Logo" style="width: 100px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 20px;">
+                    <h3 style="font-size: 24px;">Indian Institute of Information Technology, Pune</h3>
+                    <p>May 2023 - August 2023</p>
+                </div>
+                <ul>
+                    <li>
+                        Conducted research work for detecting rose leaf diseases using the Rosenet dataset. Employed six transfer learning architectures namely DenseNet121, ResNet50V2, VGG19, MobileNetV2, Xception, and InceptionV3 and added a customized head for refinement.  
+                    </li>
+                    <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\rose_table.jpeg" alt="SWINIR Proposed Model" style="width: 300px; height: auto; float: right; margin-left: 30px;">
+                    <li>
+                        Achievied notable improvements in accuracy, precision, recall, and F1-Score, reaching 98.92%, 98.96%, 98.92%, and 98.93% respectively. 
+                    </li>
+                    <li>
+                        This advancement in automated disease detection holds promise for mitigating economic losses and boosting agricultural productivity. 
+                    </li>
+                    <li>
+                        This research paper submitted in Springer Jounal: Multimedia Tools and Applications (reviews completed)
+                    </li>
+                </ul>
+            </div>
+
+            <br>
+
+
+
+
+
+            
+            <h2 style="font-size: 30px;">Research Papers, Publications and Projects</h2>
+            
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\springer_logo.png" alt="Springer Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 20px;">
+                    <h3 style="font-size: 22px;">Springer: Journal of Supercomputing</h3>
+                    <p>Under Review</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Traffic Sign Sensing: A Deep Learning approach for enhanced Road Safety</strong><br><br>
+                        <ul style="color: black;">
+                            
+                        <div style="float: right; margin-left: 10px;">
+                            <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\traffic_curves.jpeg" alt="Traffic Curves" style="width: 300px; height: auto;">
+                        </div>
+                        
+                            <li>The dataset employed for our research is Road Sign Detection, and this paper has implemented the latest YOLOv8 versions and YOLO-NAS-l for object detection.</li>
+                            <li>This work achieved impressive mAP50 values, with YOLOv8m at 94.3%, YOLOv8x at 91.9%, YOLOv8l at 92%, YOLOv8s at 94.9%, and YOLOv8n at 95.3%.</li>
+                            <li>The best results were obtained by YOLO-NAS-l, with an outstanding mAP50 score of 95.72%.</li>
+                            <li>In addition to these individual results, this work conducted a comprehensive comparative study, demonstrating that our model leads to an 8% increase in performance over existing approaches.</li>
+                        </ul>
+                </ul>
+            </div>
+
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\springer_logo.png" alt="Springer Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 10px;">
+                    <h3 style="font-size: 18px;">CCIS Springer [SCOPUS Indexed] : 3rd International Conference - ANTIC</h3>
+                    <p>Published</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Deep Transfer Learning for Enhanced Blackgram Disease Detection: A Transfer Learning - Driven Approach</strong><br><br>
+                        <ul style="color: black;">
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\blackgram_table.jpeg" alt="Traffic Curves" style="width: 300px; height: auto;">
+                            </div>
+                            <li>Achieved the highest training accuracy of 100% using DenseNet201.</li>
+                            <li>Achieved the highest testing accuracy of 95.72% using Xception and InceptionResNetV2.</li>
+                            <li>Achieved the highest Precision of 95.76% using Xception.</li>
+                            <li>Achieved the highest Recall of 95.72% using Xception and InceptionResNetV2.</li>
+                            <li>Achieved the highest F1-Score of 95.72% using Xception.</li>            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+
+
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\springer_logo.png" alt="Springer Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 10px;">
+                    <h3 style="font-size: 22px;">Springer : Cluster Computing</h3>
+                    <p>Reviews Completed</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Accurate Fruit Detection: YOLOv8 Assessments for Enhanced Strawberry Identification</strong><br><br>
+                        <ul style="color: black;"> 
+                            
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\strawberry_archi.jpeg" alt="Traffic Curves" style="width: 400px; height: auto;">
+                            </div>
+
+                            
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\strawberry_table.jpeg" alt="Traffic Curves" style="width: 400px; height: auto;">
+                            </div>
+
+                            <li>Dataset contains 247 high-quality RGB images of strawberries arranged in different alignments and positions against various backgrounds.</li>
+                            <li>Evaluates five different object-detection models: YOLOv8n, YOLOv8m, YOLOv8s, YOLOv8l, and YOLOv8x.</li>
+                            <li>Primary goal is to emphasize the importance of accurate fruit detection in agriculture to improve agricultural productivity.</li>
+                            <li>References a study employing YOLOv7 models for detecting strawberry growth phases, showcasing varying mAP@.5 values across different stages of ripeness.</li>
+                            <li>Explores the capabilities of five versions of YOLOv8, highlighting YOLOv8x as the model with the highest mAP50.</li>
+                            <li>Each variant of YOLOv8 displays exceptional precision and recall in distinguishing strawberries in diverse growth stages, showcasing unique strengths in specific strawberry classifications.</li>
+                            <li>Findings indicate a significant 13% enhancement in the mAP-50 value compared to previously published research work.</li>            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\springer_logo.png" alt="Springer Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 10px;">
+                    <h3 style="font-size: 22px;">Springer : Journal of Plant Diseases and Protection</h3>
+                    <p>Under Review</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Improving Agricultural Productivity by using YOLOv8 Models for Tomato Detection</strong><br><br>
+                        <ul style="color: black;">
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\tomato_curves.jpeg" alt="Traffic Curves" style="width: 400px; height: auto;">
+                            </div>
+
+                            
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\tomato_table.jpeg" alt="Traffic Curves" style="width: 400px; height: auto;">
+                            </div>
+                            <li>Utilizes a carefully curated dataset featuring 895 images annotated with bounding boxes in the PASCAL VOC format, focusing exclusively on the "tomato" category.</li>
+                            <li>Evaluates three distinct object-detection models—YOLOv8n, YOLOv8m, and YOLOv8s—to underscore the pivotal role of precise fruit detection in bolstering agricultural efficiency.</li>
+                            <li>References prior studies utilizing YOLOv5 and YOLOv7 models for detecting various phases of tomato growth, presenting diverse mAP@.5 values corresponding to different ripeness stages.</li>
+                            <li>Contrasts with previous research by delving into the capabilities of three iterations of YOLOv8, with YOLOv8s emerging as the model showcasing the highest mAP50.</li>
+                            <li>Each variant of YOLOv8 exhibits remarkable precision and recall in discerning tomatoes in distinct growth stages, showcasing unique strengths in specific tomato classifications.</li>
+                            <li>Findings indicate a notable 3.1% enhancement in the mAP-50 value compared to previously published research, underscoring the significant impact of this work.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+            
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\Elsevier_logo.png" alt="Elsevier Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 10px;">
+                    <h3 style="font-size: 22px;">Elsevier : Expert System with Application</h3>
+                    <p>Reviews Completed</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Tomato quality grading and maturity detection using fine-tuned transfer learning models</strong><br><br>
+                        <ul style="color: black;">
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\tomato_quality.jpeg" alt="Traffic Curves" style="width: 400px; height: auto;">
+                            </div>
+
+                            
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\tomato_maturity.jpeg" alt="Traffic Curves" style="width: 400px; height: auto;">
+                            </div>
+                            <li>Utilizes the Tomato Maturity Detection and Quality Grading dataset, which incorporates an extensive assortment of high-quality tomato images covering different stages of tomato maturity, along with pictures of both fresh and rotten tomatoes.</li>
+                            <li>Developed automated methods for discerning maturity and grading the quality of tomatoes, employing six transfer learning architectures, namely InceptionResnetV2, InceptionV3, DenseNet121, ResNet101V2, VGG19, Xception, and MobileNetV2.</li>
+                            <li>Demonstrates a 3.4% improvement in accuracy for Tomato Quality Grading and a 2% improvement in accuracy for Tomato Maturity Detection compared to current methodologies.</li>
+                            <li>By harnessing computer vision and image processing techniques, the amalgamation of this model and dataset can provide an alternative to the traditional methods of tomato maturity assessment, harvesting, quality grading, and packaging, helping alleviate economic losses and enhance agricultural productivity.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+            
+
+
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\springer_logo.png" alt="Springer Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 20px;">
+                    <h3 style="font-size: 22px;">Springer: Multimedia Tools and Applications</h3>
+                    <p>Reviews Completed</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Using transfer learning-driven deep learning to improve the detection of rose plant diseases</strong><br><br>
+                        <ul style="color: black;">
+                               
+                        <div style="float: right; margin-left: 10px;">
+                            <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\rose_table.jpeg" alt="Traffic Curves" style="width: 300px; height: auto;">
+                        </div>
+
+                            <li>This study presents a methodology for the detection of rose leaf diseases using the Rosenet dataset encompassing two common rose diseases, black spot, and downy mildew, along with images of healthy rose leaves for comparison and training.</li>
+                            <li>The methodology involved employing 6 transfer learning architecture named DenseNet121, ResNet50V2, VGG19, MobileNetV2, Xception and InceptionV3.</li>
+                            <li>In order to further refine this model, we added a customized head to help it recognize diseases.</li>
+                            <li>Our models has achieved accuracy, precision, recall and F1-Score of 98.92%, 98.96%, 98.92%, 98.93% respectively.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\springer_logo.png" alt="Springer Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 10px;">
+                    <h3 style="font-size: 22px;">Springer : Cluster Computing</h3>
+                    <p>Under Review</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Automatic Medicinal Leaf Classification through Transfer Learning with Deep Neural Network</strong><br><br>
+                        <ul style="color: black;">
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\medicine_table.jpeg" alt="Traffic Curves" style="width: 300px; height: auto;">
+                            </div>
+                            <li>Based on a large dataset of Bangladeshi medicinal leaves, representing diverse species and ailments.</li>
+                            <li>Notable results in terms of accuracy and robustness: MobileNetV2 (91.46%), InceptionV3 (96.68%), ResNet152V2 (94.78%), Xception (95.73%), DenseNet201 (98.10%), and NASNetMobile (97.63%).</li>
+                            <li>Achieved best results using DenseNet201 with an accuracy of 98.10%.</li>
+                            <li>Proposed model achieves a substantial 8% increase in accuracy compared to existing methodologies.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\springer_logo.png" alt="Springer Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 10px;">
+                    <h3 style="font-size: 22px;">Springer : Cognitive Neurodynamics</h3>
+                    <p>Under Review</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">An efficient Alzheimer's Disease Diagnosis with tuned Transfer Learning models</strong><br><br>
+                        <ul style="color: black;">
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\alzhiemer_table.jpeg" alt="Traffic Curves" style="width: 300px; height: auto;">
+                            </div>
+                            <li>Presents a reliable mechanism for early illness identification in Alzheimer's disease.</li>
+                            <li>Applies deep learning techniques using a large dataset of high-quality brain MRI images.</li>
+                             <li>Dataset includes people with Alzheimer's disease and cognitively normal patients divided into "Moderate Demented," "Mild Demented," "Very Mild Demented," and "Non Demented" classes.</li>
+                            <li>Uses four transfer learning architectures—EfficientNetV2B3, InceptionNetV3, NASNetMobile, and MobileNetV2 as base models.</li>
+                            <li>EfficientNetV2B3 model achieves highest diagnostic accuracy of 97.42% after    thorough training and evaluation.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+
+            
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\Elsevier_logo.png" alt="elsevier Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 10px;">
+                    <h3 style="font-size: 22px;">ScienceDirect : Theoretical Computer Science</h3>
+                    <p>Under Review</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Optimizing Transfer Learning for Precise Mint Leaf Classification: A Deep Learning Approach</strong><br><br>
+                        <ul style="color: black;">
+                            
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\mint_table.jpeg" alt="Traffic Curves" style="width: 400px; height: auto;">
+                            </div>
+                            <li>Pioneers cutting-edge deep learning approaches for the precise classification of mint leaves, achieving remarkable accuracy rates.</li>
+                            <li>Evaluates six prominent models named InceptionResNetV2, DenseNet169, MobileNetV2, InceptionV3, ResNet152V2, and Xception.</li>
+                            <li>Explores diverse transfer learning techniques to optimize model performance, emphasizing meticulous hyperparameter adjustments.</li>
+                            <li>The evaluation centers on critical metrics: Accuracy, Precision, Recall, and F1-Score.</li>
+                            <li>Employs sophisticated data augmentation strategies, such as rotation, zooming, shifting, and flipping, to augment the model’s ability to generalize across varied leaf conditions, including fresh, dried, and spoiled leaves.</li>
+                            <li>Achieves the highest accuracy at 99.25% by the Xception model, holding significant implications for both agriculture and computer vision domains.</li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+
+            <div>
+                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\iiitpune_logo.jpeg" alt="iiitp Logo" style="width: 80px; height: auto; display: inline-block;">
+                <div style="display: inline-block; margin-left: 10px;">
+                    <h3 style="font-size: 22px;">IIIT-Pune BTP Project</h3>
+                    <p>Recieved A grade</p>
+                </div>
+                <ul>
+                    <li>
+                        <strong style="font-size: 17px;">Fraud Detection in Banking System Credit Card Applications Using Self-Organizing Maps</strong><br><br>
+                        <ul style="color: black;">
+                            <div style="float: right; margin-left: 10px;">
+                                <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\btp_sem3.jpg" alt="Traffic Curves" style="width: 400px; height: auto;">
+                            </div>    
+                            <li>Credit card fraud is increasing considerably with the development of modern technology and global communication.</li>
+                            <li>Fraud detection systems have become essential for banks and financial institutions to minimize their losses.</li>
+                            <li>The most common technique used for fraud detection methods is K-Nearest Neighbor algorithms (KNN).</li>
+                            <li>KNN helps detect potential fraud in credit card applications without having a mapped dataset for fraudulent cases.</li>
+                            <li>Self organizing Maps (SOMs) are unsupervised neural network approaches used for clustering and are efficient in handling large and high-dimensional datasets.</li>
+                            <li>SOMs can be applied to detect credit card fraud, especially in the context of online banking and e-commerce growth.</li>
+                            <li>This paper focuses on Credit Card Application fraud detection and presents a new and innovative approach to detecting fraud using SOM.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+
+        
+        <section class="right-section section" style="display: flex; flex-direction: column; align-items: center;">
+            <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\profile_pic.jpg" alt="Profile Photo" class="profile-photo" style="max-width: 70%; max-height: 60%;">
+            
+            <h2 style="font-size: 30px;">Achievements</h2>
             <ul>
                 <li>
-                    <img src="prit_president.jpeg" alt="Achievement Image" style="width: 100%;"><br>
-                    <strong>Felicitated by the President of India, Mr. Pranab Mukherjee</strong><br>
+                    <strong>Felicitated by the President of India, Mr. Pranab Mukherjee</strong><br><br>
+                    <img src="C:\Users\mhala\OneDrive\Desktop\Imp Stuff\Honors Sem 5\Computer Vision Deep Learning\W3\prit_president.jpeg" alt="Achievement Image" class="achievement-image" style="max-width: 100%; max-height: 100%;"><br><br>
                     Recognized in 2014 for proposing an innovative image recognition model designed to identify and separate mercury content within Compact Fluorescent Bulbs (CFLs). The conceptualization and development of this model culminated in its submission to the State Government Ministry of Industry and Commerce, underscoring a commitment to environmental sustainability and technological innovation.
                 </li>
+                <br>
+                <li>
+                    <strong>Got invited for Research Internship DAAD-WISE</strong><br><br>
+                    Got an invitation letter for Research Internship of summer 2024 at Karlsruhe Institute of Technology, Germany under Dr. Jan Niehues. Project was on building Machine translation System for German to low resource indian languages. Didn't received the DAAD-WISE scholarship.
+                </li>
+                <br>
+                    <li>
+                        <strong>All India Rank (AIR) 4</strong><br>
+                        Regional Mathematics Olympiad - Homi Bhabha Centre for Science Education (HBCSE), TIFR<br>
+                        Dec 2017<br>
+                        Qualified Regional Mathematics Olympiad conducted by Tata Institute of Fundamental Research and HBCSE and selected for the Indian National Mathematics Olympiad (INMO).
+                    </li>
+                    <br>
+                    <li>
+                        <strong>All India Rank (AIR) 8</strong><br>
+                        National Creative Olympiad<br>
+                        Dec 2016<br>
+                        AIR 8 in the final stage. More than 100 schools participated across India.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>All India Rank (AIR) 12</strong><br>
+                        AMTI NMTC - AMTI<br>
+                        Dec 2017<br>
+                        AIR 12 in the National Mathematics Talent Contest (NMTC) conducted by the Association of Mathematics Teachers of India.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>All India Rank (AIR) 9</strong><br>
+                        AMTI NMTC - AMTI<br>
+                        Dec 2016<br>
+                        AIR 9 in the National Mathematics Talent Contest (NMTC) conducted by the Association of Mathematics Teachers of India.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Qualified</strong><br>
+                        NSEJS - HBCSE<br>
+                        Dec 2017<br>
+                        Qualified National Standard Examination In Junior Science (NSEJS) conducted by the Indian Association of Physics Teachers (IPAT).
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Silver Medal</strong><br>
+                        Homi Bhabha Balvaidnyanik Pariksha - Mumbai Science Teacher Association<br>
+                        Mar 2014 and 2017<br>
+                        Silver Medal in 2014 and 2017.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Gold Medal</strong><br>
+                        Ganit Pradnya, Ganit Prabhutva, and Ganit Smabodh - Mumbai Ganit Adhyapak Mandal<br>
+                        May 2016<br>
+                        Score: 100/100.
+                    </li>
             </ul>
+
+
+            <h2>Subjects Studied (IIIT-Pune)</h2>
+
+            <p>Semester 1: -</p>
             <ul>
-                <li>
-                    <strong>All India Rank (AIR) 4</strong><br>
-                    Regional Mathematics Olympiad - Homi Bhabha Centre for Science Education (HBCSE), TIFR<br>
-                    Dec 2017<br>
-                    Qualified Regional Mathematics Olympiad conducted by Tata Institute of Fundamental Research and HBCSE and selected for the Indian National Mathematics Olympiad (INMO).
-                </li>
-                <li>
-                    <strong>All India Rank (AIR) 8</strong><br>
-                    National Creative Olympiad<br>
-                    Dec 2016<br>
-                    AIR 8 in the final stage. More than 100 schools participated across India.
-                </li>
-                <li>
-                    <strong>All India Rank (AIR) 12</strong><br>
-                    AMTI NMTC - AMTI<br>
-                    Dec 2017<br>
-                    AIR 12 in the National Mathematics Talent Contest (NMTC) conducted by the Association of Mathematics Teachers of India.
-                </li>
-                <li>
-                    <strong>All India Rank (AIR) 9</strong><br>
-                    AMTI NMTC - AMTI<br>
-                    Dec 2016<br>
-                    AIR 9 in the National Mathematics Talent Contest (NMTC) conducted by the Association of Mathematics Teachers of India.
-                </li>
-                <li>
-                    <strong>Qualified</strong><br>
-                    NSEJS - HBCSE<br>
-                    Dec 2017<br>
-                    Qualified National Standard Examination In Junior Science (NSEJS) conducted by the Indian Association of Physics Teachers (IPAT).
-                </li>
-                <li>
-                    <strong>Silver Medal</strong><br>
-                    Homi Bhabha Balvaidnyanik Pariksha - Mumbai Science Teacher Association<br>
-                    Mar 2014 and 2017<br>
-                    Silver Medal in 2014 and 2017.
-                </li>
-                <li>
-                    <strong>Gold Medal</strong><br>
-                    Ganit Pradnya, Ganit Prabhutva, and Ganit Smabodh - Mumbai Ganit Adhyapak Mandal<br>
-                    May 2016<br>
-                    Score: 100/100.
-                </li>
+                <li>Basic Electronics Engineering</li>
+                <li>Foundations of Computer Science</li>
+                <li>Computer Programming Concept & Practice</li>
+                <li>Engineering Mathematics-I</li>
+                <li>Language & Writing Skills</li>
+                <li>Innovation</li>
+                <li>Environmental Science</li>
             </ul>
+            
+            <p>Semester 2: -</p>
+            <ul>
+                <li>Digital Logic & Design</li>
+                <li>Data Structure & Algorithms</li>
+                <li>Object Oriented Programming Language</li>
+                <li>Engineering mathematics-II</li>
+                <li>Entrepreneurship studies</li>
+                <li>Consciousness and Values</li>
+            </ul>
+            
+            <p>Semester 3: -</p>
+            <ul>
+                <li>Analysis & Design of Algorithm</li>
+                <li>Computer Organization and Architecture</li>
+                <li>Theory of Computation</li>
+                <li>Database Management System</li>
+                <li>Python programming</li>
+                <li>Probability and Random Process</li>
+            </ul>
+            
+            <p>Semester 4: -</p>
+            <ul>
+                <li>Computer Network</li>
+                <li>Artificial Intelligence</li>
+                <li>Operating system</li>
+                <li>Java Programming</li>
+                <li>Compiler Design</li>
+                <li>Discrete Structure</li>
+            </ul>
+            
+            <p>Semester 5: -</p>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Linear and Nonlinear Optimization</li>
+                <li>Information Retrieval</li>
+                <li>Human Computer Interaction</li>
+                <li>Cryptography and Network Security</li>
+                <li>Software Engineering</li>
+            </ul>
+            
+
+
+
+
+
         </section>
-                
+
+
+
+        
+
+        
     </div>
 </body>
 </html>
