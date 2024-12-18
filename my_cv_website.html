@@ -12,11 +12,41 @@
             background-color: #f5f5f5;
         }
         header {
-            background-color: #560f53;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+        background-color: #560f53;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .header-info {
+        text-align: center;
+        flex: 1;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    header p {
+        margin: 5px 0 0;
+        font-size: 14px;
+    }
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .social-icons img {
+        width: 25px; /* Adjust logo size */
+        height: 25px; /* Ensure consistent dimensions */
+        cursor: pointer;
+        transition: transform 0.3s, filter 0.3s;
+    }
+    .social-icons img:hover {
+        transform: scale(1.1); /* Slight zoom on hover */
+        filter: brightness(1.2); /* Brighten logo on hover */
+    }
         h1 {
             font-size: 36px;
             margin-bottom: 20px;
@@ -65,27 +95,29 @@
 </head>
 <body>
     <header>
+    <div class="header-info">
         <h1>Prit N. Mhala</h1>
         <p>Bachelor of Technology in Computer Science and Engineering<br>Honors in Machine Learning - Senior Year<br>Indian Institute of Information Technology, Pune</p>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/prit-mhala-8baab7223/" target="_blank">
-                <img src="linkedinLogo1.png" alt="LinkedIn">
-            </a>
-            <a href="https://scholar.google.com/citations?user=CIiQP64AAAAJ&hl=en" target="_blank">
-                <img src="Googlescholarlogo.png" alt="Google Scholar">
-            </a>
-            <a href="https://twitter.com/PritMhala" target="_blank">
-                <img src="twitterlogo.png" alt="Twitter">
-            </a>
-            <a href="mailto:pritmhala.learning@gmail.com" target="_blank">
-                <img src="gmaillogo.png" alt="Gmail">
-            </a>
-            <a href="path/to/your-cv.pdf" target="_blank">
-                <img src="cvlogo.png" alt="CV">
-            </a>
-        </div>
-    </header>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/prit-mhala-8baab7223/" target="_blank">
+            <img src="linkedinLogo1.png" alt="LinkedIn">
+        </a>
+        <a href="https://scholar.google.com/citations?user=CIiQP64AAAAJ&hl=en" target="_blank">
+            <img src="Googlescholarlogo.png" alt="Google Scholar">
+        </a>
+        <a href="https://twitter.com/PritMhala" target="_blank">
+            <img src="twitterlogo.png" alt="Twitter">
+        </a>
+        <a href="mailto:pritmhala.learning@gmail.com" target="_blank">
+            <img src="gmaillogo.png" alt="Gmail">
+        </a>
+        <a href="path/to/your-cv.pdf" target="_blank">
+            <img src="cvlogo.png" alt="CV">
+        </a>
+    </div>
+</header>
+
     <div class="container">
         <section class="left-section section" style="width: 25%;">
             
