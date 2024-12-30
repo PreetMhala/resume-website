@@ -91,6 +91,29 @@
         .center {
             text-align: center;
         }
+        .research-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.research-link:hover {
+    background-color: #f0f0f0;
+    border: 2px solid #560f53;
+    cursor: pointer;
+    color: #560f53;
+}
+
+.research-link img {
+    border-radius: 5px;
+}
     </style>
 </head>
 <body>
@@ -120,108 +143,53 @@
 
     <div class="container">
         <section class="left-section section" style="width: 40%;">
-            
-            <h2>Contact</h2>
-            <p>
-                Phone: +91-9082718281<br>
-                Email: <a href="mailto:112115089@cse.iiitp.ac.in">112115089@cse.iiitp.ac.in</a><br>
-                LinkedIn: <a href="https://www.linkedin.com/in/prit-mhala-8baab7223/">linkedin.com/in/PritMhala</a>
-            </p>            
-            <br>
-            
-            <h2 style="font-size: 24px;">Education</h2>
-            <div class="education-item">
-            <p>
-                <strong style="font-size: 16px;">Indian Institute of Information Technology, Pune</strong>
-                <ul>
-                    <li><strong>B.Tech Computer Science and Engineering</strong><br>
-                                CGPA: 8.74/10.00 (till 5th sem)</li>
-                </ul>
-                <ul>
-                <li><strong>Honors in Machine Learning</strong><br>
-                            CGPA: 8.50/10.00 (till 1st sem)<br>
-                            Department Rank - 2</li>
-                </ul>
-                </p>
-            </div>
-               
-            <br>
+    <h2 style="font-size: 28px; text-align: center;">Research Internships</h2>
+    <ul style="list-style-type: none; padding: 0;">
+        <li>
+            <a href="#cmu" class="research-link">
+                <img src="cmu_logo.png" alt="CMU Logo" style="width: 40px; height: auto;">
+                Carnegie Mellon University
+            </a>
+        </li>
+        <li>
+            <a href="#ncsu" class="research-link">
+                <img src="ncsu_logo.png" alt="NCSU Logo" style="width: 40px; height: auto;">
+                North Carolina State University
+            </a>
+        </li>
+        <li>
+            <a href="#pitt" class="research-link">
+                <img src="pitt_logo.png" alt="University of Pittsburgh Logo" style="width: 40px; height: auto;">
+                University of Pittsburgh
+            </a>
+        </li>
+        <li>
+            <a href="#kit" class="research-link">
+                <img src="kit_logo.png" alt="KIT Logo" style="width: 40px; height: auto;">
+                Karlsruhe Institute of Technology
+            </a>
+        </li>
+        <li>
+            <a href="#iiitp" class="research-link">
+                <img src="iiitp_logo.jpeg" alt="IIIT Pune Logo" style="width: 40px; height: auto;">
+                Indian Institute of Information Technology Pune
+            </a>
+        </li>
+        <li>
+            <a href="#iitroorkee" class="research-link">
+                <img src="iit_roorkee_logo.jpeg" alt="IIT Roorkee Logo" style="width: 40px; height: auto;">
+                Indian Institute of Technology Roorkee
+            </a>
+        </li>
+        <li>
+            <a href="#iitindore" class="research-link">
+                <img src="iit_indore_logo.png" alt="IIT Indore Logo" style="width: 40px; height: auto;">
+                Indian Institute of Technology Indore
+            </a>
+        </li>
+    </ul>
+</section>
 
-            <h2>Skills</h2>
-            <ul>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>Compute Vision</li>
-                <li>Large language Models</li>
-                <li>Diffusion Models</li>
-                <li>Academic Publishing</li>
-                <li>Tensorflow</li>
-                <li>Pytorch</li>
-                <li>Transformers</li>
-                <li>Transfer Learning</li>
-                <li>Natural Language Processing (NLP)</li>
-                <li>Sentiment Analysis</li>
-                <li>Image Recognition</li>
-                <li>Python (Programming Language)</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>React.js</li>
-            </ul>
-
-            <br>
-
-            <h2>Courses and Certifications</h2>
-            <ul>
-                <li>Deep Learning Specialization - Coursera (Deeplearning.ai)</li>
-                <li>Machine Learning Specialization - Coursera (Deeplearning.ai)</li>
-                <li>Natural Language Processing Specialization - Coursera (Deeplearning.ai)<br>Under completion</li>
-                <li>Generative AI with LLMs - Coursera (Deeplearning.ai)<br>Under completion</li>
-                <li>TensorFlow Advanced Techniques - Coursera (Deeplearning.ai)<br>Under completion</li>
-                <li>Generative Adversarial Networks - Coursera (Deeplearning.ai)<br>Under completion</li>
-                <li>Deep Learning A-Z (Udemy)</li>
-                <li>Machine Learning A-Z (Udemy)</li>
-                <li>NLP Lazy Programmer (Udemy)</li>
-                <li>ChatGPT Promptengineering for developers<br>Under learning process</li>
-                <li>Building Systems with the ChatGPT API<br>Under learning process</li>
-                <li>LangChain for LLM Application development<br>Under learning process</li>
-                <li>LangChain: Chat with your data<br>Under learning process</li>
-                <li>Finetuning Large Language models<br>Under learning process</li>
-                <li>Large Language models with semantic search<br>Under learning process</li>
-                <li>Building Generative AI Applications with Gradio<br>Under learning process</li>
-                <li>Evaluating and Debugging Generative AI Models Using Weights and Biases<br>Under learning process</li>
-                <li>How Diffusion Models Work<br>Under learning process</li>
-                <li>Automated Testing for LLMOps<br>Under learning process</li>
-                <li>LLMOps<br>Under learning process</li>
-                <li>Build LLM Apps with LangChain.js<br>Under learning process</li>
-                <li>Advanced Retrieval for AI with Chroma<br>Under learning process</li>
-                <li>Reinforcement Learning from Human Feedback<br>Under learning process</li>
-                <li>Building and Evaluating Advanced RAG Applications<br>Under learning process</li>
-                <li>Quality and Safety for LLM Applications<br>Under learning process</li>
-                <li>Vector Databases: from Embeddings to Applications<br>Under learning process</li>
-                <li>Functions, Tools and Agents with LangChain<br>Under learning process</li>
-                <li>Pair Programming with a Large Language Model<br>Under learning process</li>
-                <li>Understanding and Applying Text Embeddings<br>Under learning process</li>
-                <li>How Business Thinkers Can Start Building AI Plugins With Semantic Kernel<br>Under learning process</li>
-            </ul>
-            
-            <h2>Certificates of Internship and Paper Presentation</h2>
-            
-            <br>
-            <img src="Certificate_iiitp_summer_intern.png" alt="IIIT-Pune Certificate" style="width: 300px; height: 200px; float: center; margin-left: 10px;margin-right: 10px;"><br>
-            <div class="center">
-                <a href="https://www.linkedin.com/posts/prit-mhala-8baab7223_i-am-happy-and-honored-to-share-the-successful-activity-7104111666375667712-B8wc?utm_source=share&utm_medium=member_desktop">Certificate of Internship</a>
-            </div>
-
-            <br>
-            <br>
-
-            <img src="antic_certificate.jpg" alt="IIIT-Pune Certificate" style="width: 300px; height: 200px; float: center; margin-left: 10px;margin-right: 10px;"><br>
-            <div class="center">
-                <a href="https://www.linkedin.com/posts/prit-mhala-8baab7223_certificate-activity-7149061985446391809-5xTP?utm_source=share&utm_medium=member_desktop">Certificate of presentationa at ANTIC</a>
-            </div>
-
-
-        </section>
     
 
 
