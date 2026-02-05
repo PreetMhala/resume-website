@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Prit Mhala</title>
+    <meta name="description" content="Graduate CS Student at Stony Brook University | AI & Computer Vision Researcher">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">PM</a>
+            <nav class="nav-links">
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-greeting">Hello, I'm</p>
+                        <h1 class="hero-name">Prit Mhala</h1>
+                        <p class="hero-title">Graduate CS Student at <span class="highlight">Stony Brook
+                                University</span></p>
+                        <p class="hero-subtitle">AI Engineering • Computer Vision • Distributed Systems</p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        </div>
+                        <div class="hero-social">
+                            <a href="https://github.com/PreetMhala" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/prit-mhala-8baab7223/" target="_blank"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://scholar.google.com/citations?user=CIiQP64AAAAJ&hl=en" target="_blank"
+                                aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                            <a href="mailto:prit.mhala@stonybrook.edu" aria-label="Email"><i
+                                    class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-image-wrapper">
+                            <img src="images/profile_photo.jpeg" alt="Prit Mhala" class="hero-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section id="highlights" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Highlights</h2>
+                    <p class="section-subtitle">Memorable moments and achievements</p>
+                </div>
+
+                <div class="highlights-grid">
+                    <!-- President of India -->
+                    <div class="highlight-card">
+                        <div class="highlight-image">
+                            <img src="images/president.png" alt="Meeting with President of India Dr. Pranab Mukherjee">
+                        </div>
+                        <div class="highlight-content">
+                            <h3 class="highlight-title">Felicitated by the President of India</h3>
+                            <p class="highlight-description">
+                                Honored to meet and be felicitated by <strong>Dr. Pranab Mukherjee</strong>, the
+                                President of India, for outstanding achievements in science and mathematics at the
+                                national level.
+                            </p>
+                            <div class="highlight-meta">
+                                <span><i class="far fa-calendar"></i> 2014</span>
+                                <span><i class="fas fa-map-marker-alt"></i> New Delhi, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jensen Huang -->
+                    <div class="highlight-card">
+                        <div class="highlight-image">
+                            <img src="images/jensen_huang.jpg" alt="Meeting with NVIDIA CEO Jensen Huang">
+                        </div>
+                        <div class="highlight-content">
+                            <h3 class="highlight-title">NVIDIA AI Summit 2024</h3>
+                            <p class="highlight-description">
+                                Met <strong>Jensen Huang</strong>, CEO and Founder of NVIDIA, at the NVIDIA AI Summit
+                                2024 — an incredible experience connecting with the visionary behind the AI revolution.
+                            </p>
+                            <div class="highlight-meta">
+                                <span><i class="far fa-calendar"></i> October 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">My academic journey and achievements</p>
+                </div>
+
+                <div class="education-grid">
+                    <!-- Stony Brook University -->
+                    <div class="education-card">
+                        <div class="education-header" onclick="toggleCard(this)">
+                            <div class="education-logo">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="education-info">
+                                <h3 class="education-school">Stony Brook University</h3>
+                                <p class="education-degree">Master of Science - Computer Science</p>
+                                <div class="education-meta">
+                                    <span><i class="far fa-calendar"></i> Aug 2025 - May 2027</span>
+                                    <span class="education-grade"><i class="fas fa-star"></i> GPA: 3.7/4.0</span>
+                                </div>
+                            </div>
+                            <button class="expand-btn" aria-label="Expand details">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="education-details">
+                            <div class="education-details-inner">
+                                <h4>Fall '25 Coursework</h4>
+                                <ul>
+                                    <li>CSE 535 - Distributed Systems</li>
+                                    <li>CSE 527 - Introduction to Computer Vision</li>
+                                    <li>CSE 698 - Practicum in Teaching</li>
+                                </ul>
+                                <h4>Spring '26 Coursework</h4>
+                                <ul>
+                                    <li>CSE 566 - Virtual Reality</li>
+                                    <li>CSE 590.03 - Human Centered AI</li>
+                                    <li>CSE 656 - Computer Vision Seminar</li>
+                                    <li>CSE 523 - Advanced Project (Prof. Dimitris Samaras - CV Lab)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IIIT Pune BTech -->
+                    <div class="education-card">
+                        <div class="education-header" onclick="toggleCard(this)">
+                            <div class="education-logo">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-info">
+                                <h3 class="education-school">Indian Institute of Information Technology, Pune</h3>
+                                <p class="education-degree">Bachelor of Technology - Computer Science and Engineering
+                                </p>
+                                <div class="education-meta">
+                                    <span><i class="far fa-calendar"></i> Nov 2021 - Jul 2025</span>
+                                    <span class="education-grade"><i class="fas fa-star"></i> CGPA: 8.93/10</span>
+                                </div>
+                            </div>
+                            <button class="expand-btn" aria-label="Expand details">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="education-details">
+                            <div class="education-details-inner">
+                                <h4>Activities & Societies</h4>
+                                <ul class="activities-list">
+                                    <li>E-Cell (Writer)</li>
+                                    <li>Class Representative</li>
+                                </ul>
+                                <h4>Coursework (27 subjects)</h4>
+                                <ul>
+                                    <li>Engineering Mathematics</li>
+                                    <li>Digital Logic & Design</li>
+                                    <li>Data Structure & Algorithms</li>
+                                    <li>Object Oriented Programming</li>
+                                    <li>Analysis & Design of Algorithm</li>
+                                    <li>Computer Organization and Architecture</li>
+                                    <li>Theory of Computation</li>
+                                    <li>Database Management System</li>
+                                    <li>Python Programming</li>
+                                    <li>Probability and Random Process</li>
+                                    <li>Computer Network</li>
+                                    <li>Artificial Intelligence</li>
+                                    <li>Operating System</li>
+                                    <li>Java Programming</li>
+                                    <li>Compiler Design</li>
+                                    <li>Discrete Structure</li>
+                                    <li>Machine Learning</li>
+                                    <li>Software Engineering</li>
+                                    <li>Cryptography and Network Security</li>
+                                    <li>Linear and Nonlinear Optimization</li>
+                                    <li>Computer Graphics</li>
+                                    <li>Cloud Computing</li>
+                                    <li>Internet of Things</li>
+                                    <li>Big Data Analytics</li>
+                                    <li>High Performance Computing</li>
+                                    <li>Deep Learning</li>
+                                    <li>Distributed Computing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IIIT Pune Honors -->
+                    <div class="education-card">
+                        <div class="education-header" onclick="toggleCard(this)">
+                            <div class="education-logo">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="education-info">
+                                <h3 class="education-school">Indian Institute of Information Technology, Pune</h3>
+                                <p class="education-degree">Honors in Machine Learning</p>
+                                <div class="education-meta">
+                                    <span><i class="far fa-calendar"></i> Aug 2023 - May 2024</span>
+                                    <span class="education-grade"><i class="fas fa-trophy"></i> Institute Rank:
+                                        2/35</span>
+                                </div>
+                            </div>
+                            <button class="expand-btn" aria-label="Expand details">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="education-details">
+                            <div class="education-details-inner">
+                                <h4>Coursework (12 credits)</h4>
+                                <ul>
+                                    <li>Essential Mathematics for Machine Learning (3 credits)</li>
+                                    <li>Deep Learning for Computer Vision (3 credits)</li>
+                                    <li>Data Analytics with Python (3 credits)</li>
+                                    <li>Natural Language Processing (3 credits)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FIITJEE -->
+                    <div class="education-card">
+                        <div class="education-header" onclick="toggleCard(this)">
+                            <div class="education-logo">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="education-info">
+                                <h3 class="education-school">FIITJEE</h3>
+                                <p class="education-degree">High School • JEE Preparation</p>
+                                <div class="education-meta">
+                                    <span><i class="far fa-calendar"></i> Apr 2018 - May 2020</span>
+                                </div>
+                            </div>
+                            <button class="expand-btn" aria-label="Expand details">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="education-details">
+                            <div class="education-details-inner">
+                                <h4>Coursework</h4>
+                                <ul>
+                                    <li>Physics</li>
+                                    <li>Chemistry</li>
+                                    <li>Mathematics</li>
+                                    <li>Computer Science Fundamentals</li>
+                                    <li>English Literature</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- School of Scholars -->
+                    <div class="education-card">
+                        <div class="education-header" onclick="toggleCard(this)">
+                            <div class="education-logo">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="education-info">
+                                <h3 class="education-school">School Of Scholars, Wardha</h3>
+                                <p class="education-degree">High School</p>
+                                <div class="education-meta">
+                                    <span><i class="far fa-calendar"></i> Jul 2006 - May 2018</span>
+                                    <span class="education-grade"><i class="fas fa-star"></i> 92.4%</span>
+                                </div>
+                            </div>
+                            <button class="expand-btn" aria-label="Expand details">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="education-details">
+                            <div class="education-details-inner">
+                                <h4>Activities & Societies</h4>
+                                <ul class="activities-list">
+                                    <li>Red House (Rose)</li>
+                                    <li>Science Dramatics Club</li>
+                                </ul>
+                                <h4>Achievements & Olympiads</h4>
+                                <ul class="achievements-list">
+                                    <li>🏆 Regional Mathematics Olympiad (RMO) - State Rank 4, appeared in INMO (2017)
+                                    </li>
+                                    <li>🥇 Ganit Pravinya, Pradnya and Prabhutva Gold Medal - State Rank 1 (2016-17)
+                                    </li>
+                                    <li>🏅 AMTI - National Mathematics Talent Contest (NMTC) - All India Rank 9 (2016)
+                                    </li>
+                                    <li>🏅 AMTI - National Mathematics Talent Contest (NMTC) - All India Rank 13 (2017)
+                                    </li>
+                                    <li>🎖️ National Creative Olympiad - All India Rank 8 (2015)</li>
+                                    <li>🥈 Dr. Homi Bhabha Young Scientist Olympiad - Silver Medal (2017)</li>
+                                    <li>🥈 Dr. Homi Bhabha Young Scientist Olympiad - Silver Medal (2013)</li>
+                                    <li>🎬 Zee Cafe Budding Scientist - National Level Finalist (2014)</li>
+                                    <li>🌟 Felicitated by Dr. Pranab Mukherjee - President of India (2014)</li>
+                                    <li>📚 Young Achievers Conference (2011, 2012, 2014)</li>
+                                    <li>🎭 Dramatics Club member - Science Fair CV Raman Science Center, Nagpur</li>
+                                    <li>🧮 AMTI National Annual Mathematics Conference - Valsad - Selected for quiz
+                                        contest (16/200)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">Professional journey and research contributions</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Deutsche Telekom -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">AI Engineering Intern</h3>
+                                    <p class="timeline-company">Deutsche Telekom Digital Labs</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> Jan 2025 - Jul 2025 · 7 months</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Gurugram, India · On-site</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Team & Stream</h4>
+                                        <p>Team: OneAI | Data Science Stream: AI Enablers<br>
+                                            Projects: Anonymizer | Language Detector | Topic Modeller</p>
+                                    </div>
+                                    <div class="timeline-section">
+                                        <h4>Anonymizer Project</h4>
+                                        <ul>
+                                            <li>Developed a multilingual PII anonymization pipeline leveraging the
+                                                Microsoft Presidio framework and SpaCy-Flair models</li>
+                                            <li>Implemented language-specific enhancements for English, German,
+                                                Croatian, Greek, Hungarian, and Polish</li>
+                                            <li>Achieved PII detection accuracy exceeding 95% across all supported
+                                                languages</li>
+                                            <li>Ensured GDPR and European data protection compliance</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">Large Language Models</span>
+                                        <span class="skill-tag">NLP</span>
+                                        <span class="skill-tag">Generative AI</span>
+                                        <span class="skill-tag">Transformers</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carnegie Mellon University -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-dna"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">Research Intern</h3>
+                                    <p class="timeline-company">Carnegie Mellon University</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> May 2024 - Sep 2024 · 5 months</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Pittsburgh, PA · Remote</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Research Contributions</h4>
+                                        <ul>
+                                            <li>Worked on "Analysis of Inverted Repeats in Viral Genomes at a Large
+                                                Scale"</li>
+                                            <li>Co-authored paper and poster at ISMB 2024 in Montreal, Canada</li>
+                                            <li>Collaborated with interdisciplinary team from Philippines, UCSD,
+                                                CMU-Qatar, UPitt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">C</span>
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">Computational Biology</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NC State University -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">Summer Research Intern</h3>
+                                    <p class="timeline-company">North Carolina State University</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> May 2024 - Sep 2024 · 5 months</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Raleigh-Durham, NC · Remote</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Research Contributions</h4>
+                                        <ul>
+                                            <li>First authored paper on "Robotic Automation for Real-Time Detection of
+                                                Plant Diseases"</li>
+                                            <li>Developed YOLOv8 detection models for tomato disease detection</li>
+                                            <li>Paper submitted to IEEE ICRA 2025, Atlanta, USA</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">Deep Learning</span>
+                                        <span class="skill-tag">Computer Vision</span>
+                                        <span class="skill-tag">Robotics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IIIT Pune -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">Research Intern</h3>
+                                    <p class="timeline-company">Indian Institute of Information Technology, Pune</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> May 2023 - Nov 2023 · 7 months</span>
+                                        <span><i class="fas fa-map-marker-alt"></i> Pune, India · On-site</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Co-authored Research Papers (13 papers)</h4>
+                                        <ul>
+                                            <li>Rose plant disease detection using transfer learning</li>
+                                            <li>Medicinal Leaf Classification with Deep Neural Networks</li>
+                                            <li>YOLOv8 for Tomato Detection & Strawberry Identification</li>
+                                            <li>And 10 more in Computer Vision domain</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">Computer Vision</span>
+                                        <span class="skill-tag">Deep Learning</span>
+                                        <span class="skill-tag">Transfer Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">Featured research and development work</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Custom Diffusion Noise Schedule -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">Custom Diffusion Noise Schedule (EDM2, CelebA)</h3>
+                                    <p class="timeline-company">Stony Brook University • Prof. Dimitris Samaras</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> Oct 2025 - Dec 2025</span>
+                                        <span><i class="fas fa-tag"></i> Graduate Research Project</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Results</h4>
+                                        <ul>
+                                            <li>Best FID of 10.75 on CelebA test set</li>
+                                            <li>Tested 5 noise schedules: Karras-ρ, Linear, Cosine, Logarithmic,
+                                                Quadratic</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">Diffusion Models</span>
+                                        <span class="skill-tag">PyTorch</span>
+                                        <span class="skill-tag">Computer Vision</span>
+                                    </div>
+                                    <div class="timeline-links">
+                                        <a href="https://github.com/PreetMhala/Custom-Diffusion-Noise-Schedule-Development"
+                                            target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2PC-Sharded KV-Store -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">High-Performance 2PC-Sharded KV-Store</h3>
+                                    <p class="timeline-company">Stony Brook University</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> Nov 2025 - Dec 2025</span>
+                                        <span><i class="fas fa-tag"></i> Distributed Systems</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Key Features</h4>
+                                        <ul>
+                                            <li>50x throughput gains via asyncio pipelining</li>
+                                            <li>Multi-Paxos + 2PC for cross-shard atomicity</li>
+                                            <li>3,000+ concurrent transactions</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">Distributed Systems</span>
+                                        <span class="skill-tag">Paxos</span>
+                                        <span class="skill-tag">Python</span>
+                                    </div>
+                                    <div class="timeline-links">
+                                        <a href="https://github.com/PreetMhala/High-Performance-2PC-Sharded-KV-Store"
+                                            target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Linear PBFT -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">Linear PBFT Consensus Engine</h3>
+                                    <p class="timeline-company">Stony Brook University</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> Oct 2025 - Nov 2025</span>
+                                        <span><i class="fas fa-tag"></i> Distributed Systems</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Key Features</h4>
+                                        <ul>
+                                            <li>O(N²) → O(N) message complexity reduction</li>
+                                            <li>Ed25519 cryptographic signatures</li>
+                                            <li>100% data integrity across 7-node cluster</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">PBFT</span>
+                                        <span class="skill-tag">Cryptography</span>
+                                        <span class="skill-tag">Byzantine Fault Tolerance</span>
+                                    </div>
+                                    <div class="timeline-links">
+                                        <a href="https://github.com/PreetMhala/python-linear-pbft-consensus-engine"
+                                            target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paxos Consensus Ledger -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-landmark"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">Paxos Consensus Ledger - Distributed Banking</h3>
+                                    <p class="timeline-company">Stony Brook University</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> Sep 2025 - Oct 2025</span>
+                                        <span><i class="fas fa-tag"></i> Distributed Systems</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Key Features</h4>
+                                        <ul>
+                                            <li>Multi-Paxos consensus across 5-node cluster</li>
+                                            <li>Zero data loss during leader failures</li>
+                                            <li>State Machine Replication with checkpointing</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">Paxos</span>
+                                        <span class="skill-tag">State Machine Replication</span>
+                                    </div>
+                                    <div class="timeline-links">
+                                        <a href="https://github.com/PreetMhala/Paxos-Consensus-Ledger"
+                                            target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PII Anonymizer -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-user-shield"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">GDPR-Compliant PII Anonymization System</h3>
+                                    <p class="timeline-company">Deutsche Telekom Digital Labs</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> Jan 2025 - Jul 2025</span>
+                                        <span><i class="fas fa-tag"></i> NLP / Privacy</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Key Features</h4>
+                                        <ul>
+                                            <li>7 European languages supported</li>
+                                            <li>95%+ PII detection accuracy</li>
+                                            <li>Real-time, low-latency pipeline</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">NLP</span>
+                                        <span class="skill-tag">NER</span>
+                                        <span class="skill-tag">GDPR</span>
+                                    </div>
+                                    <div class="timeline-links">
+                                        <a href="https://github.com/PreetMhala/GDPR_compliant_PII_Anonymizer"
+                                            target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Potato Disease -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-header" onclick="toggleCard(this)">
+                                <div class="timeline-logo">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="timeline-info">
+                                    <h3 class="timeline-title">Potato Crop Leaf Disease Detection</h3>
+                                    <p class="timeline-company">IIIT Pune • Published in Expert Systems with
+                                        Applications</p>
+                                    <div class="timeline-meta">
+                                        <span><i class="far fa-calendar"></i> Mar 2024 - Nov 2024</span>
+                                        <span><i class="fas fa-tag"></i> Computer Vision</span>
+                                    </div>
+                                </div>
+                                <button class="expand-btn" aria-label="Expand details">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="timeline-details">
+                                <div class="timeline-details-inner">
+                                    <div class="timeline-section">
+                                        <h4>Results</h4>
+                                        <ul>
+                                            <li>81.31% accuracy with DenseNet201</li>
+                                            <li>6 disease types classified</li>
+                                            <li>Impact Factor: 7.5 publication</li>
+                                        </ul>
+                                    </div>
+                                    <div class="skills-tags">
+                                        <span class="skill-tag">Transfer Learning</span>
+                                        <span class="skill-tag">PyTorch</span>
+                                        <span class="skill-tag">TensorFlow</span>
+                                    </div>
+                                    <div class="timeline-links">
+                                        <a href="https://github.com/PreetMhala/Potato_leaf_disease_classifier"
+                                            target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's connect and collaborate</p>
+                </div>
+
+                <div class="contact-content">
+                    <p class="contact-text">
+                        I'm currently pursuing my Master's in Computer Science at Stony Brook University and always open
+                        to discussing research collaborations, AI/ML projects, or opportunities in computer vision and
+                        distributed systems.
+                    </p>
+                    <a href="mailto:prit.mhala@stonybrook.edu" class="contact-email">
+                        prit.mhala@stonybrook.edu
+                    </a>
+                    <a href="mailto:pmhala@cs.stonybrook.edu" class="contact-email" style="margin-top: -16px;">
+                        pmhala@cs.stonybrook.edu
+                    </a>
+                    <div class="hero-cta" style="justify-content: center;">
+                        <a href="mailto:prit.mhala@stonybrook.edu" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Say Hello
+                        </a>
+                        <a href="https://www.linkedin.com/in/prit-mhala-8baab7223/" class="btn btn-secondary"
+                            target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Prit Mhala. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/PreetMhala" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prit-mhala-8baab7223/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:prit.mhala@stonybrook.edu"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

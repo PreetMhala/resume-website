@@ -1,0 +1,422 @@
+<section id="projects" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Featured research and development work</p>
+        </div>
+
+        <div class="timeline">
+            <!-- Custom Diffusion Noise Schedule -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header" onclick="toggleCard(this)">
+                        <div class="timeline-logo">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3 class="timeline-title">Custom Diffusion Noise Schedule (EDM2, CelebA)</h3>
+                            <p class="timeline-company">Stony Brook University • Prof. Dimitris Samaras</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Oct 2025 - Dec 2025</span>
+                                <span><i class="fas fa-tag"></i> Graduate Research Project (CSE 527)</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" aria-label="Expand details">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-details-inner">
+                            <div class="timeline-section">
+                                <h4>Problem Statement</h4>
+                                <p>Diffusion models are highly sensitive to their noise schedules, yet there is no clear
+                                    consensus on which schedules perform best across datasets and training regimes. This
+                                    project investigates how different noise schedules affect training stability,
+                                    convergence speed, and sample quality.</p>
+                            </div>
+                            <div class="timeline-section">
+                                <h4>Methodology</h4>
+                                <p>Using NVIDIA's EDM2-XS architecture, trained multiple diffusion models on CelebA
+                                    (64×64) under five noise schedules: Karras-ρ, Linear, Cosine, Logarithmic, and
+                                    Quadratic. Extended to conditional diffusion with 40 binary facial attributes and
+                                    facial landmark conditioning.</p>
+                            </div>
+                            <div class="timeline-section">
+                                <h4>Results</h4>
+                                <ul>
+                                    <li>Linear, Logarithmic, and Quadratic schedules consistently outperformed Karras-ρ
+                                        and Cosine</li>
+                                    <li>Achieved best FID of 10.75 on full CelebA test set</li>
+                                    <li>Attribute-conditioned FID ≈ 20.26, landmark-conditioned FID ≈ 28.39</li>
+                                    <li>Smoother noise progressions improve convergence speed</li>
+                                </ul>
+                            </div>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Computer Vision</span>
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">Diffusion Models</span>
+                                <span class="skill-tag">Python</span>
+                            </div>
+                            <div class="timeline-links">
+                                <a href="https://github.com/PreetMhala/Custom-Diffusion-Noise-Schedule-Development"
+                                    target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- High-Performance 2PC-Sharded KV-Store -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header" onclick="toggleCard(this)">
+                        <div class="timeline-logo">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3 class="timeline-title">High-Performance 2PC-Sharded KV-Store</h3>
+                            <p class="timeline-company">Stony Brook University</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Nov 2025 - Dec 2025</span>
+                                <span><i class="fas fa-tag"></i> Distributed Systems</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" aria-label="Expand details">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-details-inner">
+                            <div class="timeline-section">
+                                <h4>Overview</h4>
+                                <p>Developed a high-performance sharded Key-Value store integrating Multi-Paxos for
+                                    intra-shard replication and Two-Phase Commit (2PC) for atomic cross-shard
+                                    transactions. Achieves up to 50x throughput gains using optimistic pipelining via
+                                    asyncio while maintaining linearizability.</p>
+                            </div>
+                            <div class="timeline-section">
+                                <h4>Key Innovations</h4>
+                                <ul>
+                                    <li>Dynamic resharding for load balancing</li>
+                                    <li>Fine-grained Two-Phase Locking (2PL)</li>
+                                    <li>Automated state transfer with log compaction</li>
+                                    <li>3,000+ concurrent transactions handling capability</li>
+                                </ul>
+                            </div>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Distributed Systems</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Paxos</span>
+                                <span class="skill-tag">2PC</span>
+                            </div>
+                            <div class="timeline-links">
+                                <a href="https://github.com/PreetMhala/High-Performance-2PC-Sharded-KV-Store"
+                                    target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linear PBFT Consensus Engine -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header" onclick="toggleCard(this)">
+                        <div class="timeline-logo">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3 class="timeline-title">Linear PBFT Consensus Engine</h3>
+                            <p class="timeline-company">Stony Brook University</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Oct 2025 - Nov 2025</span>
+                                <span><i class="fas fa-tag"></i> Distributed Systems</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" aria-label="Expand details">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-details-inner">
+                            <div class="timeline-section">
+                                <h4>Overview</h4>
+                                <p>Developed a Linear PBFT consensus engine optimizing Byzantine Fault Tolerance by
+                                    reducing message complexity from O(N²) to O(N) through leader-based vote
+                                    aggregation. Uses State Machine Replication (SMR) and Ed25519 cryptographic
+                                    signatures.</p>
+                            </div>
+                            <div class="timeline-section">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Aggregator Pattern for Pre-Prepare, Prepare, and Commit phases</li>
+                                    <li>Robust View Change protocol with asyncio-based JSON-RPC</li>
+                                    <li>100% data integrity across 7-node cluster</li>
+                                    <li>Tested with Byzantine equivocation, network partitions, and crash failures</li>
+                                </ul>
+                            </div>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Distributed Systems</span>
+                                <span class="skill-tag">PBFT</span>
+                                <span class="skill-tag">Cryptography</span>
+                            </div>
+                            <div class="timeline-links">
+                                <a href="https://github.com/PreetMhala/python-linear-pbft-consensus-engine"
+                                    target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paxos Consensus Ledger -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header" onclick="toggleCard(this)">
+                        <div class="timeline-logo">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3 class="timeline-title">Paxos Consensus Ledger - Distributed Banking System</h3>
+                            <p class="timeline-company">Stony Brook University</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Sep 2025 - Oct 2025</span>
+                                <span><i class="fas fa-tag"></i> Distributed Systems</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" aria-label="Expand details">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-details-inner">
+                            <div class="timeline-section">
+                                <h4>Overview</h4>
+                                <p>Fault-tolerant distributed banking system using Multi-Paxos consensus algorithm
+                                    ensuring strong consistency across a 5-node cluster. Features dynamic leader
+                                    election, State Machine Replication, checkpointing, and log gap-filling.</p>
+                            </div>
+                            <div class="timeline-section">
+                                <h4>Workflow</h4>
+                                <ul>
+                                    <li>Client sends transaction to current leader</li>
+                                    <li>Leader initiates Paxos rounds to achieve quorum</li>
+                                    <li>Transaction committed and applied to account balances</li>
+                                    <li>Zero data loss during simulated leader failures and network partitions</li>
+                                </ul>
+                            </div>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Distributed Systems</span>
+                                <span class="skill-tag">Paxos</span>
+                                <span class="skill-tag">Python</span>
+                            </div>
+                            <div class="timeline-links">
+                                <a href="https://github.com/PreetMhala/Paxos-Consensus-Ledger" target="_blank"><i
+                                        class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GDPR PII Anonymization -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header" onclick="toggleCard(this)">
+                        <div class="timeline-logo">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3 class="timeline-title">GDPR-Compliant Multilingual PII Anonymization System</h3>
+                            <p class="timeline-company">Deutsche Telekom Digital Labs</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Jan 2025 - Jul 2025</span>
+                                <span><i class="fas fa-tag"></i> NLP / Privacy</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" aria-label="Expand details">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-details-inner">
+                            <div class="timeline-section">
+                                <h4>Overview</h4>
+                                <p>Scalable, real-time PII anonymization pipeline for multilingual chatbot environments
+                                    ensuring GDPR compliance across 7 European languages. Uses hybrid ensemble
+                                    architecture combining SpaCy, HuggingFace, Flair NER models, and Microsoft Presidio
+                                    framework.</p>
+                            </div>
+                            <div class="timeline-section">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Type-specific placeholder replacement (e.g., [EMAIL], [PHONE_NUMBER])</li>
+                                    <li>Low-latency, high-throughput modular design</li>
+                                    <li>Safe logging, analytics, and downstream model training</li>
+                                </ul>
+                            </div>
+                            <div class="skills-tags">
+                                <span class="skill-tag">NLP</span>
+                                <span class="skill-tag">LLMs</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">CI/CD</span>
+                            </div>
+                            <div class="timeline-links">
+                                <a href="https://github.com/PreetMhala/GDPR_compliant_PII_Anonymizer" target="_blank"><i
+                                        class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Potato Disease Detection -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header" onclick="toggleCard(this)">
+                        <div class="timeline-logo">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3 class="timeline-title">AI Powered Potato Crop Leaf Disease Detection</h3>
+                            <p class="timeline-company">Indian Institute of Information Technology, Pune</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Mar 2024 - Nov 2024</span>
+                                <span><i class="fas fa-tag"></i> Computer Vision</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" aria-label="Expand details">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-details-inner">
+                            <div class="timeline-section">
+                                <h4>Overview</h4>
+                                <p>Deep learning-based approach to detect and classify 6 distinct potato leaf diseases:
+                                    bacteria, viruses, fungi, phytophthora, pests, and nematodes using transfer learning
+                                    with DenseNet201, ResNet152V2, and NasNetMobile.</p>
+                            </div>
+                            <div class="timeline-section">
+                                <h4>Results</h4>
+                                <ul>
+                                    <li>DenseNet201 achieved highest accuracy of 77.14% on original dataset</li>
+                                    <li>81.31% average accuracy through k-fold cross-validation with augmentation</li>
+                                    <li>7.68% improvement over previously reported findings</li>
+                                    <li>Published in Expert Systems with Applications (Impact Factor: 7.5)</li>
+                                </ul>
+                            </div>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">Computer Vision</span>
+                                <span class="skill-tag">TensorFlow</span>
+                            </div>
+                            <div class="timeline-links">
+                                <a href="https://github.com/PreetMhala/Potato_leaf_disease_classifier"
+                                    target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robotic Plant Disease Detection -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header" onclick="toggleCard(this)">
+                        <div class="timeline-logo">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3 class="timeline-title">Robotic Automation for Real-Time Plant Disease Detection</h3>
+                            <p class="timeline-company">North Carolina State University</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Mar 2024 - Aug 2024</span>
+                                <span><i class="fas fa-tag"></i> Robotics / CV</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" aria-label="Expand details">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-details-inner">
+                            <div class="timeline-section">
+                                <h4>Overview</h4>
+                                <p>Fully automated robotic phenotyping pipeline for real-time plant disease detection
+                                    using deep learning and field robotics. YOLOv8-based detection models with data
+                                    augmentation achieving improved accuracy on robot-collected, in-field tomato disease
+                                    datasets.</p>
+                            </div>
+                            <div class="timeline-section">
+                                <h4>Hardware Setup</h4>
+                                <ul>
+                                    <li>Husky UGV with stereo PhenoStereo cameras</li>
+                                    <li>Blackfly S USB3 machine vision cameras</li>
+                                    <li>High-resolution canopy imaging with real-time inference</li>
+                                    <li>Remote HPC GPU cluster training</li>
+                                </ul>
+                            </div>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Computer Vision</span>
+                                <span class="skill-tag">Robotics</span>
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">YOLOv8</span>
+                                <span class="skill-tag">Linux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Viral DNA Analysis -->
+            <div class="timeline-item">
+                <div class="timeline-card">
+                    <div class="timeline-header" onclick="toggleCard(this)">
+                        <div class="timeline-logo">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <div class="timeline-info">
+                            <h3 class="timeline-title">Efficient Detection of Inverted Repeats in Viral DNA</h3>
+                            <p class="timeline-company">Carnegie Mellon University</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> May 2024 - Jul 2024</span>
+                                <span><i class="fas fa-tag"></i> Computational Biology</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" aria-label="Expand details">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="timeline-details">
+                        <div class="timeline-details-inner">
+                            <div class="timeline-section">
+                                <h4>Overview</h4>
+                                <p>Designed and implemented efficient algorithms to detect non-overlapping longest
+                                    inverted repeats in viral genomes using Python-based data structures, achieving
+                                    sub-10ms average runtime on 10kb sequences.</p>
+                            </div>
+                            <div class="timeline-section">
+                                <h4>Contributions</h4>
+                                <ul>
+                                    <li>Built post-processing pipelines for BLMT (Biological Language Modeling Toolkit)
+                                    </li>
+                                    <li>High-throughput analyses on remote Linux servers</li>
+                                    <li>Poster presented at ISMB 2024 in Montreal</li>
+                                    <li>Proposed approach outperformed existing benchmark methods</li>
+                                </ul>
+                            </div>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Computational Biology</span>
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Data Structures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

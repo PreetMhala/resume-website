@@ -1,0 +1,18 @@
+# Site settings
+title: Prit Mhala
+description: Graduate CS Student at Stony Brook University | AI & Computer Vision Researcher
+baseurl: ""
+url: "https://preetmhala.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
