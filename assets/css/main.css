@@ -244,10 +244,12 @@ h5 {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(10, 10, 15, 0.8), rgba(10, 10, 15, 0.95)), url('../../images/portfolio_banner.jpg');
-  background-size: cover;
-  background-position: center;
+  background-image: url('../../images/portfolio_banner.jpg');
+  background-size: 100% auto;
+  background-position: top center;
   background-repeat: no-repeat;
+  opacity: 0.8;
+  /* Slight opacity to blend, but keeping it bright as requested */
   pointer-events: none;
 }
 
