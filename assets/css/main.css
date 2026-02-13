@@ -265,6 +265,7 @@ h5 {
   color: var(--accent-blue);
   font-weight: 500;
   margin-bottom: 8px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-name {
@@ -275,12 +276,14 @@ h5 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .hero-title {
   font-size: 1.3rem;
   color: var(--text-secondary);
   margin-bottom: 8px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero-title .highlight {
@@ -292,6 +295,7 @@ h5 {
   font-size: 1.1rem;
   color: var(--text-muted);
   margin-bottom: 32px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero-cta {
@@ -377,6 +381,7 @@ h5 {
   color: var(--text-secondary);
   display: flex;
   gap: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .about-focus {
