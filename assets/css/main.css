@@ -357,14 +357,14 @@ h5 {
   background: var(--gradient-accent);
   border-color: transparent;
   color: white;
-  color: white;
   transform: translateY(-2px);
 }
 
-position: relative;
-width: 180px;
-height: 180px;
-margin: 0 auto;
+.hero-image-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
 }
 
 .hero-image-wrapper::before {
