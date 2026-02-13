@@ -256,8 +256,8 @@ h5 {
 .hero-content {
   width: 100%;
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 40px;
+  grid-template-columns: 180px 1fr;
+  gap: 30px;
   align-items: center;
 }
 
@@ -269,7 +269,7 @@ h5 {
   border-radius: var(--radius-lg);
   padding: 30px;
   width: fit-content;
-  max-width: 900px;
+  max-width: 850px;
   margin: 0 auto;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
@@ -313,7 +313,7 @@ h5 {
 .hero-title {
   font-size: 1.3rem;
   color: var(--text-secondary);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -325,14 +325,14 @@ h5 {
 .hero-subtitle {
   font-size: 1.1rem;
   color: var(--text-muted);
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero-cta {
   display: flex;
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 12px;
+  margin-bottom: 0;
 }
 
 .hero-social {
@@ -357,14 +357,14 @@ h5 {
   background: var(--gradient-accent);
   border-color: transparent;
   color: white;
-  transform: translateY(-3px);
+  color: white;
+  transform: translateY(-2px);
 }
 
-.hero-image-wrapper {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  margin: 0 auto;
+position: relative;
+width: 180px;
+height: 180px;
+margin: 0 auto;
 }
 
 .hero-image-wrapper::before {
@@ -389,7 +389,7 @@ h5 {
 
 /* --- Hero About Short --- */
 .hero-about-short {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   color: var(--text-secondary);
   font-size: 1.1rem;
   line-height: 1.6;
