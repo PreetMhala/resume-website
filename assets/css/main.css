@@ -464,6 +464,14 @@ h5 {
   justify-content: center;
   font-size: 1.5rem;
   flex-shrink: 0;
+  overflow: hidden;
+  /* Ensure image stays within radius */
+}
+
+.education-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .education-info {
@@ -685,6 +693,14 @@ h5 {
   justify-content: center;
   font-size: 1.3rem;
   flex-shrink: 0;
+  overflow: hidden;
+  /* Ensure image stays within radius */
+}
+
+.timeline-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .timeline-info {
