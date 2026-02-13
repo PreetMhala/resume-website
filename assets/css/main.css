@@ -471,7 +471,11 @@ h5 {
 .education-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 4px;
+  /* Optional: Add some padding so logos don't touch edges */
+  background: white;
+  /* Force white background for logos as they are likely designed for light bg */
 }
 
 .education-info {
@@ -700,7 +704,9 @@ h5 {
 .timeline-logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 4px;
+  background: white;
 }
 
 .timeline-info {
