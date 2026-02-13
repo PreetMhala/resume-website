@@ -254,10 +254,43 @@ h5 {
 }
 
 .hero-content {
+  /* display: grid;  Removed grid from here, handled by hero-card now if needed, or hero-card is the flex container */
+  /* grid-template-columns: 1fr 1fr; */
+  /* gap: 60px; */
+  /* align-items: center; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
   align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@media (max-width: 968px) {
+  .hero-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .hero-cta,
+  .hero-social {
+    justify-content: center;
+  }
 }
 
 .hero-greeting {
@@ -356,86 +389,17 @@ h5 {
   color: var(--text-muted);
 }
 
-/* --- Hero About Section --- */
-.hero-about {
-  margin-top: 40px;
-  max-width: 100%;
-}
-
-.about-summary {
-  font-size: 1.15rem;
-  color: var(--text-primary);
+/* --- Hero About Short --- */
+.hero-about-short {
   margin-bottom: 24px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
   line-height: 1.6;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.about-details {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 32px;
-}
-
-.about-details li {
-  margin-bottom: 12px;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  display: flex;
-  gap: 10px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-.about-focus {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  margin-bottom: 32px;
-}
-
-.focus-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--accent-blue);
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.focus-list {
-  list-style: none;
-  padding: 0;
-}
-
-.focus-list li {
+.hero-about-short p {
   margin-bottom: 8px;
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  padding-left: 4px;
-}
-
-.about-publications,
-.about-philosophy {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
-
-.about-availability {
-  margin-top: 24px;
-  padding: 16px;
-  background: rgba(102, 126, 234, 0.1);
-  border: 1px solid rgba(102, 126, 234, 0.3);
-  border-radius: var(--radius-sm);
-  color: var(--text-primary);
-  font-weight: 500;
-  font-size: 0.95rem;
-}
-
-.highlight-text {
-  color: var(--accent-pink);
-  font-weight: 600;
 }
 
 /* --- Section Base --- */
