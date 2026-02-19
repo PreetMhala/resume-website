@@ -361,6 +361,12 @@ h5 {
   transform: translateY(-2px);
 }
 
+.hero-social a.cv-link {
+  font-size: 0.85rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.5px;
+}
+
 .hero-image-wrapper {
   position: relative;
   width: 340px;
